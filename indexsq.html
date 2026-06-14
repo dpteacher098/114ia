@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>114慈班級電子佈告欄</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="container-fluid padding-tb">
+            <div class="row">
+                <div class="col-8">
+                    <h1>貿一慈班級佈告欄</h1>
+                </div>
+                
+                <div class="col-12 mb-3">
+                    <div class="group">
+                        <label>公告事項搜尋</label>
+                        <select id="select">
+                            <option value="" checked>All</option>
+                            <option value="A01學校公告">A01學校公告</option>
+                            <option value="B01導師叮嚀">B01導師叮嚀</option>
+                            <option value="C01國文">C01國文</option>
+                            <option value="C02英文">C02英語文、閱讀寫作</option>
+                            <option value="C03數學">C03數學</option>
+                            <option value="C04會計">C04會計（公民）</option>
+                            <option value="C05數概">C05數概、資訊科技、計概</option>
+                            <option value="C06商概">C06商概</option>
+                            <option value="C07國貿">C07國際貿易</option>
+                            <option value="C08體育">C08體育</option>
+                            <option value="C09生命教育">C09生命教育</option>
+                            <option value="C10音樂">C10音樂</option>
+                            <option value="C11美術">C11美術</option>
+                            <option value="C12國防">C12全民國防</option>
+                            <option value="C13護理">C13健康與護理</option>
+                        </select>
+                        <input type="submit" id="doaction" class="btn btn-primary ml-3" value="查詢">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="table-responsive-md">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="w-15">公告日期</th>
+                                    <th scope="col" class="w-10">公告類別</th>
+                                    <th scope="col" class="w-10">公告人</th>
+                                    <th scope="col" class="w-15">公告項目</th>
+                                    <th scope="col" class="w-10">截止日期</th>
+                                    <th scope="col" class="w-15">截止時間</th>
+                                    <th scope="col" class="w-10">公告內容</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-data">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
